@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PruebaExamen.tabla_tipo_membresia.Tmembresia"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid BackgroundColor="#024A59">
+
+        <Image Grid.Row="0" Source="nuevo.png" Background="white"></Image>
+        <Label VerticalOptions="End" HorizontalOptions="End" Text="AGREGAR" FontSize="22" TextColor="Black" FontAttributes="Bold"></Label>
+
+
+        <Label Text="" x:Name="resultado" TextColor="Black" ></Label>
+        <Entry PlaceholderColor="white" TextColor="White" Placeholder="Ingrese descripcion " Keyboard="Text"  x:Name="desForm" Grid.Row="1" Grid.Column="0"/>
+        
+        <Button  FontAttributes="Bold"
+                FontSize="25"
+                TextColor="white" 
+                BackgroundColor="#024A59" 
+                BorderWidth="1"
+                CornerRadius="10"  
+                WidthRequest="200" 
+                HeightRequest="65"
+                Text="Enviar" 
+                Clicked="Button_Clicked" 
+                Grid.Row="3" 
+                Grid.Column="0"  
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Center"></Button>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height=".25*" ></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        
+
+    </Grid>
+
+</ContentPage>
